@@ -59,11 +59,33 @@
 
 ###################
 # reading file with csv module
+# import csv
+# with open('PythonApplication1/testdata/linearregression.csv', 'r') as our_file:
+#     our_csv = csv.reader(our_file, delimiter=';')
+#     # print("Type: {}, somenumber: {}".format(type(our_csv, 324234324)))
+
+#     for count, row in enumerate(our_csv):
+#         if count == 0:
+#             item1 = row[0]
+#             item2 = row[1]
+
+#             item1 = item1[-1] # item2[0:-1]
+#             print(item1, item2, sep='---')
+#             continue
+#         print(row)
+###################
+
+
+
+###################
+# reading file with csv module
 import csv
 with open('PythonApplication1/testdata/linearregression.csv', 'r') as our_file:
     our_csv = csv.reader(our_file, delimiter=';')
 
     # print("Type: {}, somenumber: {}".format(type(our_csv, 324234324)))
+
+    d1 = {} # {x:[], y:[23,23,24546,56,7 ....] }
 
     for count, row in enumerate(our_csv):
         if count == 0:
@@ -71,10 +93,12 @@ with open('PythonApplication1/testdata/linearregression.csv', 'r') as our_file:
             item2 = row[1]
 
             item1 = item1[-1] # item2[0:-1]
+
+
+            d1[item1] = []
+            
             print(item1, item2, sep='---')
             continue
         
         print(row)
 ###################
-
-
