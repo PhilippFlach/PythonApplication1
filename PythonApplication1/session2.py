@@ -57,10 +57,18 @@
 ###################
 import csv
 
+
 with open('PythonApplication1/testdata/linearregression.csv', 'r') as our_file:
-    our_csv = csv.reader(our_file)
-    print("Type: " + str(type(our_csv)))
-    our_csv = csv.DictReader(our_file)
-    print("Type: " + str(type(our_csv)))
+    our_csv = csv.reader(our_file, delimiter=';')
+
+    # print("Type: {}, some number: {}".format(type(our_csv), 2323))
+
+    for row in our_csv:
+        print(row)
+
+
+
+    # our_csv = csv.DictReader(our_file)
+    # print("Type: " + str(type(our_csv)))
 
 
