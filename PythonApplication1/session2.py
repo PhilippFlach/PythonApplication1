@@ -27,7 +27,8 @@
 #     print(count, t1[0], t1[1])
 ###################
 
-
+# python -m pip install -U matplotlib
+# import matplotlib
 ###################
 # reading files
 # our_file = open('testdata/linearregression.csv', 'r')
@@ -91,7 +92,6 @@ with open('PythonApplication1/testdata/linearregression.csv', 'r') as our_file:
             item2 = row[1]
 
             item1 = item1[-1] # item2[0:-1]
-
 
             d1[item1] = []
             d1[item2] = []
