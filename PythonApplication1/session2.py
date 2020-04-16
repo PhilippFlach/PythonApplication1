@@ -80,19 +80,51 @@
 
 ###################
 # reading file with csv module
+# import csv
+
+
+# d1 = {} # {'x':[], 'y':[23,23,24546,56,7 ....] }
+
+
+# with open('PythonApplication1/testdata/linearregression.csv', 'r') as our_file:
+#     our_csv = csv.reader(our_file, delimiter=';')
+
+#     for count, row in enumerate(our_csv):
+#         if count == 0:
+#             item1 = row[0]
+#             item2 = row[1]
+#             item1 = item1[-1] # item2[0:-1]
+#             d1[item1] = []
+#             d1[item2] = []
+            
+#             print(item1, item2, sep='---')
+#             continue
+#             # exit(1)
+        
+#         print(row)
+#         d1['x'].append(row[0])
+#         d1['y'].append(row[1])
+    
+#     print(d1)
+###################
+
+
+###################
+# reading file with csv module AND plotting it with matplotlib
 import csv
+import matplotlib.pyplot as plt
+
+
+d1 = {} # {'x':[], 'y':[23,23,24546,56,7 ....] }
+
 with open('PythonApplication1/testdata/linearregression.csv', 'r') as our_file:
     our_csv = csv.reader(our_file, delimiter=';')
-
-    d1 = {} # {'x':[], 'y':[23,23,24546,56,7 ....] }
 
     for count, row in enumerate(our_csv):
         if count == 0:
             item1 = row[0]
             item2 = row[1]
-
             item1 = item1[-1] # item2[0:-1]
-
             d1[item1] = []
             d1[item2] = []
             
@@ -106,5 +138,11 @@ with open('PythonApplication1/testdata/linearregression.csv', 'r') as our_file:
     
     print(d1)
 
-        
+
+#matplotlib comamnd below
+plt.plot(d1['x'],  d1['y'])
+plt.ylabel('regressions values')
+plt.xlabel('time')
+plt.show()
+
 ###################
