@@ -31,11 +31,17 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="README.txt" />
+    <Content Include="testdata\materials.csv">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="testdata\measurements.csv">
+      <SubType>Code</SubType>
+    </Content>
   </ItemGroup>
-   <ItemGroup>
+  <ItemGroup>
     <Content Include="session1.py" />
   </ItemGroup>
-    <ItemGroup>
+  <ItemGroup>
     <Content Include="session2.py" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
