@@ -98,10 +98,13 @@ with open('PythonApplication1/testdata/linearregression.csv', 'r') as our_file:
             
             print(item1, item2, sep='---')
             continue
+            # exit(1)
         
         print(row)
         d1['x'].append(row[0])
         d1['y'].append(row[1])
+    
+    print(d1)
 
-        print(d1)
+        
 ###################
