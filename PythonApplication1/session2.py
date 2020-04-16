@@ -30,7 +30,7 @@
 
 ###################
 # reading files
-# our_file = open('testdata/linearregression.csv', 'r')
+# our_file = open('PythonApplication1/testdata/linearregression.csv', 'r')
 # # print('Type: ' + str(type(our_file)))
 
 # for row in our_file.readlines():
@@ -42,16 +42,25 @@
 
 ###################
 # reading file with 'with' keyword
-with open('testdata/linearregression.csv', 'r') as our_file:
-    for row in our_file.readlines():
-        # print(row, end='')
-        seperated = row.split(';')
-        item1 = seperated[0]
-        item2 = seperated[1]
+# with open('PythonApplication1/testdata/linearregression.csv', 'r') as our_file:
+#     for row in our_file.readlines():
+#         # print(row, end='')
+#         seperated = row.split(';')
+#         item1 = seperated[0]
+#         item2 = seperated[1]
 
-        item2 = item2[:-1] # item2[0:-1]
-        print(item1, item2, sep='---')
+#         item2 = item2[:-1] # item2[0:-1]
+#         print(item1, item2, sep='---')
 ###################
 
+
+###################
+import csv
+
+with open('PythonApplication1/testdata/linearregression.csv', 'r') as our_file:
+    our_csv = csv.reader(our_file)
+    print("Type: " + str(type(our_csv)))
+    our_csv = csv.DictReader(our_file)
+    print("Type: " + str(type(our_csv)))
 
 
