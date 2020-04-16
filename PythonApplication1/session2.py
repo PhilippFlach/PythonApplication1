@@ -140,7 +140,7 @@ with open('PythonApplication1/testdata/linearregression.csv', 'r') as our_file:
 
 
 #matplotlib comamnd below
-plt.plot(d1['x'],  d1['y'])
+plt.plot(d1['x'],  d1['y'], 'ro')
 plt.ylabel('regressions values')
 plt.xlabel('time')
 plt.show()
