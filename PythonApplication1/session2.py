@@ -63,8 +63,14 @@ with open('PythonApplication1/testdata/linearregression.csv', 'r') as our_file:
 
     # print("Type: {}, some number: {}".format(type(our_csv), 2323))
 
-    for row in our_csv:
-        print(row)
+    for count, row in enumerate(our_csv):
+        if count == 0:
+            item1 = row[0]
+            item2 = row[1]
+
+            item1 = item1[-1]
+            print(item1, item2)
+        # print(row)
 
 
 
