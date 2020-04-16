@@ -39,18 +39,20 @@
 # our_file.close()
 ###################
 
+# PEP 8
 
 ###################
 # reading file with 'with' keyword
-with open('testdata/linearregression.csv', 'r') as our_file:
+with open('PythonApplication1/testdata/linearregression.csv', 'r') as our_file:
     for row in our_file.readlines():
         # print(row, end='')
         seperated = row.split(';')
         item1 = seperated[0]
         item2 = seperated[1]
 
-        item2 = item2[:-1] # item2[0:-1]
+        item1 = item1[-1] # item2[0:-1]
         print(item1, item2, sep='---')
+        break
 ###################
 
 
