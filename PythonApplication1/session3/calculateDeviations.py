@@ -2,7 +2,7 @@ import functions as f
 
 
 
-readFilePath = 'PythonApplication1/session3/measurements.csv'
+readFilePath = 'PythonApplication1/testdata/measurements.csv'
 writeFilePath = 'PythonApplication1/session3/newDeviations.csv'
 
 
