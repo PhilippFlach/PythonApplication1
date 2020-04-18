@@ -90,3 +90,6 @@ if __name__ == '__main__':
     deviations = calculateDeviation(measurements, debugging=True)
     print(deviations)
     writeValuesToFile(deviations, 'PythonApplication1/session3/newDeviations.csv')
+
+
+    # Building python file: ----> https://packaging.python.org/tutorials/packaging-projects/
