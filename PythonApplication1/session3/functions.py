@@ -1,30 +1,3 @@
-#function with default values
-
-def philippsfunction(planet="Earth"):
-    print("Hello {}".format(planet))
-
-def functionvariousVar(*planets):
-    for planet in planets:
-        print("Hello {}".format(planet))
-
-def functionvariousVarDictionary(**planets):
-    # print(planets)
-    # loop through keys
-    # for key in planets:
-    #     print("Hello {}".format(   planets[key]   ))
-
-    # # loop thourgh values
-    # for planet in planets.values():
-    #     print("Hello {}".format(    planet   ))
-    # loop thourgh key value pairs
-    for key, value in planets.items():
-        print("Key: {}, Value: {}".format(    key, value   ))
-
-
-def richFunction(name, planet, *planets, **kplanets):
-    pass
-
-    
 
 def readMeasurements(filePath, customdelimiter = ';', debugging = False):
     """Read the measurement from filePath and return a useful list"""
@@ -113,11 +86,7 @@ def writeValuesToFile(values, filePath):
 
 
 if __name__ == '__main__':
-    #measurements = readMeasurements('PythonApplication1/session3/measurements.csv', debugging=True)
-    #deviations = calculateDeviation(measurements, debugging=True)
-    #print(deviations)
-    #writeValuesToFile(deviations, 'PythonApplication1/session3/newDeviations.csv')
-    #pi=philippsfunction
-    #pi("Mercury")
-    # functionvariousVar("Earth", "Mercury", "Venus", "Jupiter")
-    functionvariousVarDictionary(p1="Earth", p2="Mercury", p3="Venus", p4="Jupiter")
+    measurements = readMeasurements('PythonApplication1/session3/measurements.csv', debugging=True)
+    deviations = calculateDeviation(measurements, debugging=True)
+    print(deviations)
+    writeValuesToFile(deviations, 'PythonApplication1/session3/newDeviations.csv')
