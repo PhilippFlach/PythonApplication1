@@ -37,12 +37,41 @@
     <Content Include="testdata\measurements.csv">
       <SubType>Code</SubType>
     </Content>
-  </ItemGroup>
+    <Content Include="testdata\linearregression.csv">
+      <SubType>Code</SubType>
+    </Content></ItemGroup>
   <ItemGroup>
     <Content Include="session1.py" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="matplottests.py" />
+  </ItemGroup>
+  <ItemGroup>
     <Content Include="session2.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="session3\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="session3\calculateDeviations.py" />
+  </ItemGroup>
+   <ItemGroup>
+    <Content Include="session3\functions.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="session3\measurements.csv" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="session3\materials.csv" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="session3\newDeviations.csv" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="session3\session3_further\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="session3\session3_further\exercises.py" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
