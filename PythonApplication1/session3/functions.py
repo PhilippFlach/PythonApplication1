@@ -8,8 +8,23 @@ def functionvariousVar(*planets):
         print("Hello {}".format(planet))
 
 def functionvariousVarDictionary(**planets):
-    for planet in planets:
-        print("Hello {}".format(planet))
+    # print(planets)
+    # loop through keys
+    # for key in planets:
+    #     print("Hello {}".format(   planets[key]   ))
+
+    # # loop thourgh values
+    # for planet in planets.values():
+    #     print("Hello {}".format(    planet   ))
+    # loop thourgh key value pairs
+    for key, value in planets.items():
+        print("Key: {}, Value: {}".format(    key, value   ))
+
+
+def richFunction(name, planet, *planets, **kplanets):
+    pass
+
+    
 
 def readMeasurements(filePath, customdelimiter = ';', debugging = False):
     """Read the measurement from filePath and return a useful list"""
@@ -104,5 +119,5 @@ if __name__ == '__main__':
     #writeValuesToFile(deviations, 'PythonApplication1/session3/newDeviations.csv')
     #pi=philippsfunction
     #pi("Mercury")
-    functionvariousVar("Earth", "Mercury", "Venus", "Jupiter")
-    functionvariousVarDictionary("P)
+    # functionvariousVar("Earth", "Mercury", "Venus", "Jupiter")
+    functionvariousVarDictionary(p1="Earth", p2="Mercury", p3="Venus", p4="Jupiter")
