@@ -44,3 +44,5 @@ $ sudo pip install pulp            # PuLP
 $ sudo apt-get install glpk-utils  # GLPK
 $ sudo apt-get install coinor-cbc  # CoinOR
 
+8.) Separators:
+Tab = \t

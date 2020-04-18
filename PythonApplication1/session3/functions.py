@@ -1,4 +1,15 @@
+#function with default values
 
+def philippsfunction(planet="Earth"):
+    print("Hello {}".format(planet))
+
+def functionvariousVar(*planets):
+    for planet in planets:
+        print("Hello {}".format(planet))
+
+def functionvariousVarDictionary(**planets):
+    for planet in planets:
+        print("Hello {}".format(planet))
 
 def readMeasurements(filePath, customdelimiter = ';', debugging = False):
     """Read the measurement from filePath and return a useful list"""
@@ -87,7 +98,11 @@ def writeValuesToFile(values, filePath):
 
 
 if __name__ == '__main__':
-    measurements = readMeasurements('PythonApplication1/session3/measurements.csv', debugging=True)
-    deviations = calculateDeviation(measurements, debugging=True)
-    print(deviations)
-    writeValuesToFile(deviations, 'PythonApplication1/session3/newDeviations.csv')
+    #measurements = readMeasurements('PythonApplication1/session3/measurements.csv', debugging=True)
+    #deviations = calculateDeviation(measurements, debugging=True)
+    #print(deviations)
+    #writeValuesToFile(deviations, 'PythonApplication1/session3/newDeviations.csv')
+    #pi=philippsfunction
+    #pi("Mercury")
+    functionvariousVar("Earth", "Mercury", "Venus", "Jupiter")
+    functionvariousVarDictionary("P)
